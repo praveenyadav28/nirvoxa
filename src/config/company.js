@@ -5,7 +5,7 @@ export const companyConfig = {
   subTagline: 'Ideas | Code | Growth',
   shortDescription:
     'Nirvoxa builds intelligent business management software and custom digital solutions that simplify operations, connect teams, and help businesses scale with confidence.',
-  domain: 'https://nirvoxaitsolutions.com',
+  domain: (import.meta.env.VITE_SITE_URL || 'https://nirvoxaitsolutions.com').replace(/\/+$/, ''),
 
   contact: {
     email: 'contact@nirvoxaitsolutions.com',
